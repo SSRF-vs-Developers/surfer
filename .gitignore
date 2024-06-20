@@ -1,0 +1,10 @@
+/project/
+!/project/build.properties
+!/project/plugin.sbt
+/target/
+/.idea/
+/.bsp/
+/resources/docker/telegram.conf
+/resources/plotting/
+!/resources/plotting/plotting.ipynb
+main.conf

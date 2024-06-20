@@ -1,0 +1,64 @@
+{
+  "ssrf": [
+    {
+      "name": "file_get_contents",
+      "position": 1
+    },
+    {
+      "name": "curl_init",
+      "position": 1
+    },
+    {
+      "name": "curl_setopt",
+      "position": 3
+    },
+    {
+      "name": "getimagesize",
+      "position": 1
+    },
+    {
+      "name": "get_headers",
+      "position": 1
+    },
+    {
+      "name": "wp_http::get",
+      "position": 1
+    },
+    {
+      "name": "requests::get",
+      "position": 1
+    },
+    {
+      "name": "wp_remote_request",
+      "position": 1
+    },
+    {
+      "name": "wp_remote_get",
+      "position": 1
+    },
+    {
+      "name": "wp_remote_post",
+      "position": 1
+    },
+    {
+      "name": "wp_remote_head",
+      "position": 1
+    },
+    {
+      "name": "wp_safe_remote_request",
+      "position": 1
+    },
+    {
+      "name": "wp_safe_remote_get",
+      "position": 1
+    },
+    {
+      "name": "wp_safe_remote_post",
+      "position": 1
+    },
+    {
+      "name": "wp_safe_remote_head",
+      "position": 1
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+{
+    "nodes" : {
+        "DEFAULTS"   : { "color" : "black", "shape" : "record", "attribute" : "SPECIAL:LABEL", "comment": ""},
+        "LITERAL"    : { "color" : "black", "shape" : "record", "attribute" : "CODE"},
+        "METHOD"     : { "color" : "black", "shape" : "record", "attribute" : "CODE"},
+        "IDENTIFIER" : { "color" : "black", "shape" : "record", "attribute" : "CODE"},
+        "CALL"       : { "color" : "black", "shape" : "record", "attribute" : "CODE"},
+        "METHOD_PARAMETER_IN" : { "attribute" : "SPECIAL:LABEL" }
+    },
+    "edges" : {
+        "DEFAULTS"     : { "color" : "black", "style" : "line"},
+        "AST"          : { "color" : "blue"    },
+        "CFG"          : { "color" : "red"     },
+        "REACHING_DEF" : { "color" : "orange"  },
+        "ARGUMENT"     : { "color" : "purple", "style" : "dashed"},
+        "CALL"         : { "color" : "crimson" }
+    }
+}

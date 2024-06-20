@@ -27,8 +27,8 @@ RUN sbt test
 RUN sbt stage
 # configs
 ## custom config for cpg creation
-COPY cpg.conf /php-cpg/main.conf
+COPY cpg.conf /cpg/main.conf
 WORKDIR /
 ## scama configs
 COPY "scala-master.conf" "/scala-master/main.conf"
-COPY "telegram.conf" "/scala-master/telegram.conf"
+COPY "telegram.conf.example" "/scala-master/telegram.conf"

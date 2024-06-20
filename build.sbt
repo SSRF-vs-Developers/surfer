@@ -10,7 +10,7 @@ libraryDependencies ++= Seq(
   "io.spray"           %% "spray-json" % "1.3.6",
   "org.wvlet.airframe" %% "airframe-log" % "23.3.0",
   "org.slf4j"           % "slf4j-nop" % "2.0.5",
-  "de.tubs.cs.ias"     %% "cpg-slice-util" % "0.0.54",
+  "de.tubs.cs.ias"     %% "cpg-slice-util" % "1.0.0",
   "de.tubs.cs.ias"     %% "cpg-dotfile-exporter" % "1.0.5",
   "org.reflections"     % "reflections" % "0.10.2"
 )

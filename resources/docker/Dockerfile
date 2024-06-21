@@ -7,12 +7,12 @@ ENV WORKFOLDER_SLICE "/surf/cpg-slice-util/"
 ENV WORKFOLDER_SURFER "/surf/surfer/"
 ARG BRANCH
 # get dotfile exporter
-RUN --mount=type=ssh git clone --depth 1 ${CPG_DOTFILE_EXPORT_URL} ${WORKFOLDER_DOTTER}
+RUN --mount=type=ssh git clone ${CPG_DOTFILE_EXPORT_URL} ${WORKFOLDER_DOTTER}
 WORKDIR ${WORKFOLDER_DOTTER}
 RUN git checkout f822ca49f4668ff3dfecae2506d1834d8e0a550c
 RUN sbt publishLocal
 # get cpg-slice-util and test it
-RUN --mount=type=ssh git clone --depth 1 ${CPG_SLICE_UTIL_REPO_URL} ${WORKFOLDER_SLICE}
+RUN --mount=type=ssh git clone ${CPG_SLICE_UTIL_REPO_URL} ${WORKFOLDER_SLICE}
 WORKDIR ${WORKFOLDER_SLICE}
 RUN git checkout 8e7cbc31a4c2a0140ad6ed6d25dcf36fb5d074cc
 COPY cpg.conf .
@@ -20,7 +20,7 @@ COPY cpg.conf main.conf
 RUN sbt test
 RUN sbt publishLocal
 
-RUN --mount=type=ssh git clone --depth 1 ${SURFER_REPO_URL} ${WORKFOLDER_SURFER}
+RUN --mount=type=ssh git clone ${SURFER_REPO_URL} ${WORKFOLDER_SURFER}
 WORKDIR ${WORKFOLDER_SURFER}
 RUN git checkout 28384004e8dad17f56f7b47e6a9b9e623aeebb28
 COPY cpg.conf .
